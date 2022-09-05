@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhagwaticookingclasses</title>
+
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        #main
+        {
+            width: 100%;
+        }
+        /*.background
+        {
+            width: 100%;
+            height: 640px;
+            background-color: darkgrey;
+        }*/
+        .header
+        {
+            width: 100%;
+            height: 130px;
+            background-color: lavender;
+        }
+        .left
+        {
+            width: 20%;
+            height: 130px;
+            background-color: white;
+            padding-top: 10px;
+            padding-left: 40px;
+            float: left;
+        }
+        .right
+        {
+            width: 80%;
+            height: 130px;
+           padding-left: 250px;
+           padding-top: 20px; 
+           font-size: larger;
+           color: purple;
+           float: left;
+           background-color: lavender;
+        }
+        .body
+        {
+            width: 100%;
+            height: 1500px;
+            float: left;
+            background-color: grey;
+        }
+       
+        .top
+        {
+            position: sticky;
+            width: 100%;
+            top: 0;
+        }
+        
+        ul
+        {
+ 
+            height: 50px;
+            background-color: rgba(86, 86, 91, 0.965);
+            /* margin-left: 670px; */
+            margin-bottom: 0%;
+            margin-top: 0px;
+            padding: 0%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        li
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-right: 20px;
+        }
+        a
+        {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        li:hover
+        {
+            background-color: lightgray;
+        }
+        li:hover a
+        {
+            color: black;
+            display: inline-block;
+        }
+
+       .length
+        {
+            margin-left: 190px;
+            margin-top: 20px; 
+            margin-bottom: 20px;      
+        }
+
+        .product
+        {
+            float: left;
+            padding-left: 130px;
+            padding-top: 10px;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+            /* padding-right: 50px; */
+            
+        }
+
+        .footer
+        {
+            width: 100%;
+            height: 70px;
+            background-color: lavender;
+            float: left;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        
+        .product h2
+        {
+            text-align: center;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+        }
+
+        .product button
+        {
+            padding-top: 0%;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #myvideo{position: relative;}
+        #content{position: absolute;top:220px}
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <!-- header open -->
+        <div class="header">
+            <div class="left">
+                <img src="images/bhagwaticlasses.jpg" alt="bhagwaticookingclasses">
+            </div>
+
+            <div class="right">
+                <h1>Bhagwati Cooking Classes</h1>
+            </div>
+        </div>
+        <!-- header close -->
+
+        <!-- body open -->
+        <div class="body">
+            <!-- top start -->
+            <div class="top">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Form.html">Register</a></li>
+            </ul>
+            </div>
+            <!-- top end -->
+
+           
+            <div class="center">
+                <!-- big photo start -->
+                <div class="length">
+                <!-- <img src="images/cooking.jpg" alt="cooking" width="80%" height="400"> -->
+                <video controls id="myvideo" width="800" autoplay>
+                    <source src="images/for-food-99185.mp3" type="video/filetype(mp3)">
+                </video>
+                <div id="content">
+                    <h1>Tops Tech</h1>
+                </div>
+                <!-- <center><iframe width="800" height="400" src="https://www.youtube.com/embed/4yTkdN8JEH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> -->
+                </div>
+                <!-- big photo end -->
+
+                 <!-- product start -->
+                 <div class="product">
+                    <img src="images/pasta.jpg" alt="pasta" height="250px" width="170px">
+                    <h2>Pasta</h2> 
+                    <center><button>Add to cart</button></center>
+                </div>
+
+                 <div class="product">
+                    <img src="images/cake.jpg" alt="cake" height="250px" width="170px">
+                    <h2>Cake</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+
+                 <div class="product">
+                    <img src="images/bread.jpg" alt="bread" height="250px" width="170px">
+                    <h2>Breads</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/dal batti.jpg" alt="dalbatti" height="250px" width="170px">
+                    <h2>Dal Batti</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/waffle.jpg" alt="waffle" height="250px" width="170px">
+                    <h2>Waffle</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/pizza.jpg" alt="pizza" height="250px" width="170px">
+                    <h2>Pizza</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/icecream.jpg" alt="icecream" height="250px" width="170px">
+                    <h2>Ice-cream</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/noodles.jpg" alt="noodles" height="250px" width="170px">
+                    <h2>Noodles</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                <!-- product end -->
+            </div>
+        </div>
+        <!-- body close -->
+
+        <!-- footer open -->
+        <div class="footer">
+            <center><h3>Bhagwati Cooking Classes by Krishi Shah</h3></center>
+        </div>
+        <!-- footer end -->
+
+    </div>
+</body>
+</html>
