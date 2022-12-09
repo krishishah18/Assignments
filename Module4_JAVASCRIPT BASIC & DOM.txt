@@ -1,0 +1,101 @@
+Modul-4 JAVASCRIPT BASIC & DOM
+
+1. What is JavaScript? 
+JavaScript is a lightweight, interpreted programming language. The development of network-centric applications is its intended use. In addition to complementing Java, it also works with it. Because it is integrated with HTML, JavaScript is relatively simple to use. It is free and platform-independent.
+
+2. What is the use of isNaN function?
+The JavaScript isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the value is a NaN else returns false. It is different from the Number.isNaN() Method.
+
+3. What is negative Infinity? 
+The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest available. This means that no other number is lesser than this value. It can be generated using a self-made function or by an arithmetic operation. 
+
+4. Which company developed JavaScript?
+Brendan Eich, a Netscape Communications Corporation programmer, created JavaScript in September 1995.
+
+5. What are undeclared and undefined variables?
+- Undefined variable means a variable has been declared but does not have a value. It occurs when a variable has been declared but has not been assigned with any value. Undefined is not a keyword.
+- Undeclared variable means that the variable does not exist in the program at all. It occurs when we try to access any variable that is not initialized or declared earlier using var or const keyword. If we use ‘typeof’ operator to get the value of an undeclared variable, we will face the runtime error with return value as “undefined”. The scope of the undeclared variables is always global.
+
+6. Write the code for adding new elements dynamically?
+Creation of new element: New elements can be created in JS by using the createElement() method.  
+Eg: document.createElement("<tagName>");  
+// Where <tagName> can be any HTML 
+// tagName like div, ul, button, etc.
+
+// newDiv element has been created
+For Eg: let newDiv = document.createElement("div");
+
+7. What is the difference between ViewState and SessionState? 
+The basic difference between these two is that the ViewState is to manage state at the client’s end, making state management easy for end-user while SessionState manages state at the server’s end, making it easy to manage content from this end too.
+
+8. What is === operator? 
+The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+9. How can the style/class of an element be changed? 
+We can change, add or remove any CSS property from an HTML element on the occurrence of any event with the help of JavaScript. There are two approaches that allow us to achieve this task.
+Approach 1: Changing CSS with the help of the style property
+Approach 2: Changing the class itself – We can use two properties that can be used to manipulate the classes.
+	- The classList Property: The classList is a read-only property that returns the CSS class names of an element as a DOMTokenList object. 
+	- The className Property: This property is used to set the current class of the element to the specified class.
+
+10. How to read and write a file using JavaScript? 
+The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file into memory and stores it in a buffer. 
+
+11. What are all the looping structures in JavaScript? 
+The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops. It makes the code compact. It is mostly used in array.
+There are four types of loops in JavaScript.
+- for loop
+- while loop
+- do-while loop
+- for-in loop
+
+12. How can you convert the string of any base to an integer in JavaScript? 
+In JavaScript parseInt() function (or a method) is used to convert the passed in string parameter or value to an integer value itself. This function returns an integer of base which is specified in second argument of parseInt() function. JavaScript parseInt() function returns Nan( not a number) when the string doesn’t contain number. 
+Eg: <script>
+	function convertStoI() {
+		var a = "100";
+		var b = parseInt(a);
+		document.write("Integer value is" + b);
+		var d = parseInt("3 11 43");
+		document.write("</br>");
+	
+		document.write('Integer value is ' + d);
+	
+	}
+	convertStoI();
+     </script>
+
+13. What is the function of the delete operator? 
+The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically. . On successful deletion, it will return true, else false will be returned.
+
+14. What are all the types of Pop up boxes available in JavaScript? 
+In Javascript, popup boxes are used to display the message or notification to the user. There are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.
+- Alert Box: It is used when a warning message is needed to be produced. When the alert box is displayed to the user, the user needs to press ok and proceed.
+- Prompt Box: It is a type of pop up box which is used to get the user input for further use. After entering the required details user have to click ok to proceed next stage else by pressing the cancel button user returns the null value.
+- Confirm Box: It is a type of pop-up box that is used to get authorization or permission from the user. The user has to press the ok or cancel button to proceed.
+
+15. What is the use of Void (0)?
+An Introduction to JavaScript Void 0: Explained With Examples
+By Ravikiran A S
+Last updated on Sep 15, 202210412
+An Introduction to JavaScript Void 0
+Table of Contents
+What Does JavaScript Void 0 Mean?Preventing a Page to Reload Using JavaScript Void 0JavaScript Void 0 AlternativesConclusion
+When referring to plain English, void means an empty space that holds nothing. But when talking about the void keyword in JavaScript or other programming languages, it refers to returning nothing. You might have used it as a return type while writing codes. When you want a function or any statement to return any specific data type, you mention return data_type. However, when you want a method to return nothing, you use return void. JavaScript Void 0 is similar to that.
+
+Post Graduate Program: Full Stack Web Development
+in Collaboration with Caltech CTMEENROLL NOWPost Graduate Program: Full Stack Web Development
+What Does JavaScript Void 0 Mean?
+JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16. How can a page be forced to load another page in JavaScript? 
+Approach: We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+17. What are the disadvantages of using innerHTML in JavaScript?
+Disadvantages of using innerHTML property in JavaScript:
+- The use of innerHTML very slow: The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+- Preserves event handlers attached to any DOM elements: The event handlers do not get attached to the new elements created by setting innerHTML automatically. To do so one has to keep track of the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers.
+- Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.
+- Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.
+
+
